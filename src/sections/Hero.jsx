@@ -5,6 +5,7 @@ import HeroExperience from '../components/HeroModels/HeroExperience.jsx'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import AnnimatedCounter from '../components/AnnimatedCounter.jsx'
+import TitleHeader from "../components/TitleHeader";
 
 const Hero = () => {
   useGSAP(() => {
@@ -18,7 +19,12 @@ const Hero = () => {
   </div>
 
   {/* Main content container */}
-  <div className="flex flex-col lg:flex-row min-h-screen w-full">
+  <div className="pt-24">
+  <TitleHeader 
+  title="About Me" 
+  sub="👋 A Quick Intro" 
+  />
+  <div className="flex flex-col lg:flex-row min-h-screen w-full mt-3 lg:mt-1">
     {/* Left: Text content - takes full width on mobile, half on desktop */}
     <header className="flex-1 flex flex-col justify-center p-5 md:p-20 lg:w-1/2">
       <div className="flex flex-col gap-7 max-w-3xl">
@@ -61,23 +67,38 @@ const Hero = () => {
         <p className="text-white-50 md:text-xl relative z-10">
           I'm committed to writing clean, maintainable code and constantly expanding my skill set with new tools and frameworks.
         </p>
-        <Button className="md:w-80 md:h-16 w-60 h-12" id="button" text="See my Work"/>
+        <div className="flex flex-wrap md:flex-nowrap gap-4 justify-center">
+          <Button
+            className="w-60 h-12 md:flex-1 md:max-w-xs md:h-16"
+            id="button"
+            text="See my Work"
+          />
+          <Button
+            className="w-70 h-12 md:flex-1 md:max-w-xs md:h-16"
+            text="Download my CV"
+            href="/cv/SaifullahHaaris_CV_2025.pdf"
+            download
+          />
+        </div>
       </div>
     </header>
 
     {/* Right: 3D Model - full width on mobile, half on desktop */}
-    {/* <div className="w-full max-w-2xl aspect-square">
-        <img src="/images/profile-photo.jpg" alt="background"/>
-    </div> */}
     <figure className="flex-1 lg:w-1/2 flex items-center justify-center p-5 lg:p-10">
-      <div className="w-full max-w-2xl aspect-square">
-        <HeroExperience/>
+      <div className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-[400px] aspect-square">
+        <img src="/images/profile-photo.png" alt="profilephoto"/>
+        {/* <HeroExperience/> */}
       </div>
     </figure>
   </div>
-
+</div>
   <AnnimatedCounter/>
 </section>
+)
+}
+
+export default Hero
+
 //     <section id="hero" className="relative overflow-hidden">
 //         <div className="absolute top-0 left-0 z-10">
 //             <img src="/images/bg.png" alt="background"/>
@@ -141,7 +162,7 @@ const Hero = () => {
 //         </div>
 //         <AnnimatedCounter/>
 //     </section>
-  )
-}
 
-export default Hero
+{/* <div className="w-full max-w-2xl aspect-square">
+        <img src="/images/profile-photo.jpg" alt="background"/>
+    </div> */}

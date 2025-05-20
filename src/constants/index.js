@@ -31,8 +31,8 @@ const words = [
 
 const counterItems = [
   { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 3, suffix: "+", label: "Satisfied Clients" },
-  { value: 3, suffix: "+", label: "Completed Projects" },
+  { value: 2, suffix: "+", label: "Satisfied Clients" },
+  { value: 2, suffix: "+", label: "Completed Projects" },
   { value: 10, suffix: "+", label: "Github Projects" },
 ];
 
@@ -246,21 +246,24 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+  // {
+  //   name: "insta",
+  //   imgPath: "/images/youtube.png",
+  // },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/saifullahhaaris",
+  },
+  {
+    name: "github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/saifullahhaaris",
+  },
+  {
+    name: "youtube",
+    imgPath: "/images/youtube.png",
+    url: "https://www.youtube.com/@saifullahhaaris",
   },
 ];
 

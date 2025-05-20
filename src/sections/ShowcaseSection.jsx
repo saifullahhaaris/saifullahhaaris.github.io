@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react'; 
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,8 +46,11 @@ const ShowcaseSection = () => {
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
         <div className="w-full">
-            <div className="showcaselayout">
-
+            <TitleHeader 
+                    title="Personal Projects" 
+                    sub="💻 Some Things I've Built" 
+                    />
+            <div className="showcaselayout mt-16">
                 {/* {LEFT} */}
                 <div className="first-project-wrapper" ref={project1Ref}>
                     <div className="image-wrapper">
@@ -54,10 +58,21 @@ const ShowcaseSection = () => {
                     </div>
                     <div className="text-content">
                         <h2>
-                            On-Demand rides made simple with a powerful, userfriendly app called ryde
+                            A full-stack web app to manage and track tickets
+                        </h2>
+                        <p className="text-white-50 md:text-xl mb-8">
+                            An app built with Angular, Node.js, Express & MongoDB, featuring JWT auth, role-based access, and real-time updates via Socket.io.                        
+                        </p>
+                    </div>
+                    <div className="image-wrapper">
+                        <img src="/images/project1.png" alt="Ryde"/>
+                    </div>
+                    <div className="text-content">
+                        <h2>
+                            A full-stack web app to manage and track tickets
                         </h2>
                         <p className="text-white-50 md:text-xl">
-                            An app built with reactnative, expo & tailwindcss for a fast user-friendly experience
+                            An app built with React, Node.js, Express & MongoDB, featuring JWT auth, role-based access, and real-time updates via Socket.io.                        
                         </p>
                     </div>
                 </div>
@@ -68,29 +83,72 @@ const ShowcaseSection = () => {
                         <div className="image-wrapper bg-[#ffefdb]">
                             <img src="/images/project2.png" alt="Library Management Platform"/>
                         </div>
-                        <h2>Library Management Platform</h2>
+                        <h2 className="mb-4">
+                            An Android app for discovering and saving trending movies
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built with Kotlin, Jetpack Compose & TMDB API. Features include dark/light themes and Offline caching via Room Database (SQLite) with clean UI.
+                        </p>
                     </div>
                     <div className="project" ref={project3Ref}>
                         <div className="image-wrapper bg-[#ffe7eb]">
                             <img src="/images/project3.png" alt="YC Directory"/>
-                        <h2>YC Directory</h2>
+                        </div>
+                        <h2 className="mb-4">
+                           A classic Snake game built in Java
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built using Java, swing and OOP principles. Features include keyboard controls, dynamic grid logic, score tracking, and customizable speed.                        
+                        </p>
                     </div>
-                </div>
+                    <div className="project" ref={project5Ref}>
+                        <div className="image-wrapper bg-[#ffe7eb]">
+                            <img src="/images/project3.png" alt="YC Directory"/>
+                        </div>
+                        <h2 className="mb-4">
+                            An Android app for discovering and saving trending movies
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built with Kotlin, Jetpack Compose & TMDB API. Features include dark/light themes, pagination, and offline caching using Room (backed by SQLite) with clean architecture.
+                        </p>
+                    </div>
                 </div>
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={project4Ref}>
                         <div className="image-wrapper bg-[#ffe7eb]">
                             <img src="/images/project3.png" alt="YC Directory"/>
                         </div>
-                        <h2>YC Directory</h2>
+                        <h2 className="mb-4">
+                           A real-time multiplayer dice battle game for Android
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built with Kotlin, Android Studio & Firebase. Features animated dice rolls, real-time score sync, and simple matchmaking for PvP battles.                        
+                        </p>
                     </div>
                     <div className="project" ref={project5Ref}>
                         <div className="image-wrapper bg-[#ffe7eb]">
                             <img src="/images/project3.png" alt="YC Directory"/>
                         </div>
-                        <h2>YC Directory</h2>
+                        <h2 className="mb-4">
+                            An Android app for discovering and saving trending movies
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built with Kotlin, Jetpack Compose & TMDB API. Features include dark/light themes, pagination, and offline caching using Room (backed by SQLite) with clean architecture.
+                        </p>
+                    </div>
+                    <div className="project" ref={project5Ref}>
+                        <div className="image-wrapper bg-[#ffe7eb]">
+                            <img src="/images/project3.png" alt="YC Directory"/>
+                        </div>
+                        <h2 className="mb-4">
+                            An Android app for discovering and saving trending movies
+                        </h2>
+                        <p className="text-white-50 md:text-xl">
+                            Built with Kotlin, Jetpack Compose & TMDB API. Features include dark/light themes, pagination, and offline caching using Room (backed by SQLite) with clean architecture.
+                        </p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

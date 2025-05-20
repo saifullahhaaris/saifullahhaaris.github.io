@@ -23,8 +23,8 @@ const TechStack = () => {
     <div id="skills" className="flex-center section-padding">
         <div className="w-full h-full md:px-10 px-5">
             <TitleHeader 
-                title="My preferred Tech Stack" 
-                sub="The Skills I Bring to the Table" 
+                title="Tech Stacks & Skills" 
+                sub="👨‍💻 The Tools and Languages I Love Using" 
             />
             <div className="tech-grid">
                 {techStackIcons.map((icon) => (

@@ -7,8 +7,9 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="flex-center section-padding">
         <div className="w-full h-full md:px-10 px-5">
-            <TitleHeader title= "What People Say About ME?"
-            sub ="Client Feedback Highlights"/>
+            <TitleHeader 
+            title= "Feedback & Testimonials"
+            sub ="🗣️ What People Say About Me"/>
             <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
                 {testimonials.map(({imgPath, name, mentions, review}) => (
                     <GlowCard card={{review}}>

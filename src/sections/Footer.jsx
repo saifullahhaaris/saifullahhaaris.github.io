@@ -5,23 +5,35 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer-container">
-            <div className="flex flex-col justify-center">
-                <a href="/">Visit my blog</a>
+            <div className="flex flex-col justify-center md:items-start items-center">
+                <a href="https://medium.com/@saifullahhaaris" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                    Visit my blog
+                </a>
             </div>
             <div className="socials">
-                {socialImgs.map((img) =>(
-                    <a 
-                        className="icon" 
-                        target="_blank" 
-                        href={img.url} 
-                        key={img.url}>
-                            <img src={img.imgPath}/>
+                {socialImgs.map((img) => (
+                    <a
+                    className="icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={img.url}
+                    key={img.url}
+                    >
+                        <img src={img.imgPath} alt={img.name} />
                     </a>
                 ))}
             </div>
-            <div className="flex flex-col justify-center">
-                <p className="text-center md:text-end">
-                  © {new Date().getFullYear()} Saif. All rights reserved.  
+            <div className="flex flex-row items-center justify-center md:justify-end space-x-2">
+                <img
+                    src="/images/Favicon.png"
+                    alt="Saifullah Haaris Logo"
+                    className="w-5 h-5"
+                />
+                <p className="text-sm">
+                    © {new Date().getFullYear()} Saifullah Haaris. All Rights Reserved.
                 </p>
             </div>
         </div>
