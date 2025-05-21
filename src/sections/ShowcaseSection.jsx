@@ -61,7 +61,7 @@ const ShowcaseSection = () => {
                             A full-stack web app to manage and track tickets
                         </h2>
                         <p className="text-white-50 md:text-xl mb-8">
-                            An app built with Angular, Node.js, Express & MongoDB, featuring JWT auth, role-based access, and real-time updates via Socket.io.                        
+                            Built with Java (CLI & Spring Boot), Angular, and MySQL. Includes RESTful APIs, JWT auth, role-based access, real-time updates, and a terminal-based version for offline ticket management.                        
                         </p>
                     </div>
                     <div className="image-wrapper">
