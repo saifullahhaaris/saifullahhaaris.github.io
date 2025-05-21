@@ -2,13 +2,11 @@
 
 A modern, animated portfolio website built with React, inspired by Adrian's YouTube tutorial and customized with my own projects and details.
 
----
 
 ## Overview
 
 This portfolio showcases my personal and academic projects, highlighting my skills in full-stack development, Android app creation, and game programming. The site features smooth GSAP animations, a responsive layout, and clean, reusable React components.
 
----
 
 ## Featured Projects
 
@@ -24,7 +22,6 @@ This portfolio showcases my personal and academic projects, highlighting my skil
 - **Real-Time Multiplayer Dice Battle Game**  
   An Android game built with Kotlin and Firebase. Features animated dice rolls, real-time score synchronization, and simple matchmaking for PvP battles.
 
----
 
 ## Tech Stack
 
@@ -34,7 +31,6 @@ This portfolio showcases my personal and academic projects, highlighting my skil
 - **Animations:** GSAP
 - **Other:** Firebase, Jetpack Compose
 
----
 
 ## Getting Started
 
@@ -45,7 +41,6 @@ This portfolio showcases my personal and academic projects, highlighting my skil
 3. Start the development server  
    `npm start`
 
----
 
 ## License
 
