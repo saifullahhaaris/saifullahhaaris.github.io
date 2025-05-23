@@ -1,3 +1,8 @@
+// this component is a password-protected portfolio page
+// it will only show the portfolio if the correct password is entered
+// uncomment the code in App.jsx to enable password protection
+
+
 import React, { useState } from 'react'
 import NavBar from './HeroModels/NavBar'
 import Hero from '../sections/Hero'
@@ -7,16 +12,16 @@ import FeatureCards from '../sections/FeatureCards'
 import ExperienceSection from '../sections/ExperienceSection'
 import LogoSection from '../sections/LogoSection'
 import EducationSection from '../sections/EducationSection'
-import Testimonials from '../sections/Testimonials' // Uncomment if you use it
+import Testimonials from '../sections/Testimonials' 
 import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
-// import other sections ...
+
 
 export default function ProtectedPortfolio() {
   const [authorized, setAuthorized] = useState(false)
   const [input, setInput] = useState('')
 
-  const correctPassword = 'Password' // replace with your secret or better use env variables
+  const correctPassword = 'Password' 
 
   if (authorized) {
     return (
@@ -38,12 +43,12 @@ export default function ProtectedPortfolio() {
 
   return (
     <div style={{
-      height: "100vh",              // full viewport height
-      display: "flex",              // enable flexbox
-      flexDirection: "column",      // stack items vertically
-      justifyContent: "center",     // center vertically
-      alignItems: "center",         // center horizontally
-      gap: "1rem",                  // space between elements
+      height: "100vh",              
+      display: "flex",              
+      flexDirection: "column",      
+      justifyContent: "center",     
+      alignItems: "center",         
+      gap: "1rem",                  
       padding: "1rem",
       textAlign: "center",
     }}>

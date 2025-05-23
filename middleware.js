@@ -1,3 +1,8 @@
+// This component is a Next.js's simple password-protected portfolio page.
+
+
+
+
 // import { NextResponse } from 'next/server'
 
 // export function middleware(request) {

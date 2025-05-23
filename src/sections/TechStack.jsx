@@ -31,15 +31,18 @@ const TechStack = () => {
                     <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
                         <div className="tech-card-animated-bg"/>
                         <div className="tech-card-content">
-                            <div className="tech-icon-wrapper">
+                            <div className="tech-icon-wrapper flex justify-center items-center h-[200px] mb-2">
                                 <TechIcon model={icon} />
                             </div>
-                            <div className="padding-x w-full">
-                                <p>{icon.name}</p>
+                            <div className="px-4 w-full pb-4">
+                                <p className="text-center whitespace-pre-line">{icon.name}</p>
                             </div>
                         </div>
                     </div>
                 ))}
+
+                {/* Uncomment this section if you want to display images instead of icons */}
+                
                 {/* {techStackImgs.map((icon) => (
                     <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
                         <div className="tech-card-animated-bg"/>
