@@ -113,11 +113,6 @@ const Contact = () => {
                {/* <ContactExperience />  */}
             </div>
           </div>
-          {/* <figure className="flex-1 lg:w-1/2 flex items-center justify-center p-5 lg:p-10">
-            <div className="w-full max-w-2xl aspect-square">
-                <HeroExperience/>
-            </div>
-          </figure> */}
         </div>
       </div>
     </section>
@@ -125,10 +120,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{/* <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-                <HeroExperience/>
-               <ContactExperience /> 
-            </div>
-          </div> */}

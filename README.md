@@ -8,7 +8,7 @@ A modern, animated portfolio website built with React, inspired by Adrian's YouT
 This portfolio showcases my personal and academic projects, highlighting my skills in full-stack development, Android app creation, and game programming. The site features smooth GSAP animations, a responsive layout, and clean, reusable React components.
 
 
-## Featured Projects
+## Some Featured Projects
 
 - **Ticket Management Web App**  
   A full-stack system for managing and tracking support tickets. Built with Java (CLI & Spring Boot), Angular, and MySQL. Features RESTful APIs, JWT authentication, role-based access, real-time updates, and a terminal-based version for offline ticket management.

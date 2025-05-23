@@ -53,7 +53,7 @@ const ExperienceSection = () => {
         })
     },[])
   return (
-    <section id="experience" className="w-full md:mt-40 mt-20 selection-padding xl:px-0">
+    <section id="experience" className="w-full md:mt-40 mt-20 md:mb-20 selection-padding xl:px-0">
         <div className="w-full h-full md:px-20 px-5">
            <TitleHeader 
            title="Professional Work Experience"
@@ -65,7 +65,8 @@ const ExperienceSection = () => {
                             <div className="xl:w-2/6">
                                 <GlowCard card={card} index={index}>
                                     <div>
-                                        <img src={card.imgPath} alt={card.title}/>
+                                        {/* <img src={card.imgPath} alt={card.title}/> */}
+                                        <span className="exp-image-name font-semibold text-2xl">{card.name}</span>
                                     </div>
                                 </GlowCard>
                             </div>

@@ -55,8 +55,8 @@ const Hero = () => {
         </div>
 
         {/* About text - remove all <br> tags */}
-        <p className="text-4xl font-bold text-blue-400">
-          Hi, I'm <span className="text-violet-500">Saifullah Haaris</span>
+        <p className="text-4xl font-bold text-blue-300">
+          Hi, I'm <span className="text-violet-600">Saifullah Haaris</span>
         </p>
         <p className="text-white-50 md:text-xl relative z-10">
           A passionate Software Engineering undergraduate at the University of Westminster (IIT Campus, Sri Lanka). I bring hands-on experience from internships in mobile app development, full-stack projects, and software integration, where I've built scalable, efficient, and user-focused solutions.
@@ -84,7 +84,8 @@ const Hero = () => {
     </header>
 
     {/* Right: 3D Model - full width on mobile, half on desktop */}
-    <figure className="flex-1 lg:w-1/2 flex items-center justify-center p-5 lg:p-10">
+    <figure className=" flex-1 lg:w-1/2 flex items-center justify-center p-5 lg:p-10"> 
+    {/* bg-[#490be4] */}
       <div className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-[400px] aspect-square">
         <img src="/images/profile-photo.png" alt="profilephoto"/>
         {/* <HeroExperience/> */}

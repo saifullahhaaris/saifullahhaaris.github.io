@@ -36,6 +36,14 @@ const NavBar = () => {
 
 export default NavBar
 
+
+
+
+
+
+//Dynamic navbar that changes style on scroll using React 
+
+
 // import React, { useEffect } from 'react'
 // import { navLinks } from '../../constants'
 // import { useState } from 'react';

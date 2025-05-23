@@ -27,14 +27,25 @@ const Footer = () => {
                 ))}
             </div>
             <div className="flex flex-row items-center justify-center md:justify-end space-x-2">
+              <a href="#hero" className="flex items-center space-x-2">
                 <img
-                    src="/images/Favicon.png"
-                    alt="Saifullah Haaris Logo"
-                    className="w-5 h-5"
+                  src="/images/Favicon.png"
+                  alt="Saifullah Haaris Logo"
+                  className="w-5 h-5"
                 />
                 <p className="text-sm">
-                    © {new Date().getFullYear()} Saifullah Haaris. All Rights Reserved.
+                  © {new Date().getFullYear()}{' '}
+                  <a
+                    href="https://linktr.ee/saifullah.haaris"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Saifullah Haaris
+                  </a>
+                  . All Rights Reserved.
                 </p>
+              </a>
             </div>
         </div>
     </footer>

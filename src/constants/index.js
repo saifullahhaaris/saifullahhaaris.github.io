@@ -1,7 +1,11 @@
 
 const navLinks = [
   {
-    name: "Work",
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    name: "Projects",
     link: "#work",
   },
   {
@@ -9,13 +13,13 @@ const navLinks = [
     link: "#experience",
   },
   {
-    name: "Skills",
-    link: "#skills",
+    name: "Education",
+    link: "#education",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
 ];
 
 const words = [
@@ -115,7 +119,7 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "Frontend Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
@@ -148,39 +152,42 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+  review: "Saifullah worked sincerely and diligently, actively involved in the projects and tasks assigned to him. we wish him success in his future endeavors.",
+    // imgPath: "/images/exp1.png",
+    name: "IMARA SOFTWARE SOLUTIONS (PVT) LTD",
+    logoPath: "/images/logo11.png",
+    title: "Software Integration Intern",
+    date: "June 2024 - December 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Designed and implemented software integrations and automation workflows using Make.com and Zapier.",
+      "Streamlined processes by automating repetitive tasks, improving operational efficiency.",
+      "Ensured robust system performance through testing and continuous improvement.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Saifullah’s work as a Flutter developer was exceptional. He consistently delivered high-quality, user-friendly mobile applications and approached every task with a strong problem-solving mindset.",
+    // imgPath: "/images/exp2.png",
+    name: "MBRYON TECH (PVT) LTD",
+    logoPath: "/images/logo22.png",
+    title: "Flutter Developer Intern",
+    date: "October 2023 - March 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed cross-platform mobile applications using Flutter and Firebase, enhancing user experience.",
+      "Contributed to the ROSCAS project, designing, developing, and deploying a mobile application.",
+      "Integrated backend services and APIs with Flutter, ensuring seamless data exchange.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review: "Saifullah was a reliable and detail-oriented Administrator. He efficiently managed operational tasks, maintained excellent records, and supported the team with strong organizational and communication skills.",
+    // imgPath: "/images/exp3.png",
+    name: "IDEAL IT SOLUTIONS (PVT) LTD",
+    logoPath: "/images/logo33.png",
+    title: "Administrator",
+    date: "November 2022 - September 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Managed daily operations, ensuring seamless communication and coordination across teams.",
+      "Oversaw and maintained IT infrastructure, ensuring reliability and uptime.",
+      "Provided administrative support, including scheduling, documentation, and reporting.",
     ],
   },
 ];
@@ -246,10 +253,6 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  // {
-  //   name: "insta",
-  //   imgPath: "/images/youtube.png",
-  // },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
@@ -267,6 +270,34 @@ const socialImgs = [
   },
 ];
 
+const educationCards = [
+  {
+    institute: "University of Westminster (IIT)",
+    degree: "BEng.(Hons) Software Engineering",
+    duration: "Jan 2022 - Present",
+    highlights: [
+      "Specialized in Java and Full-Stack Development.",
+    ],
+  },
+  {
+    institute: "Zahira College",
+    degree: "GCE Advanced Level ",
+    duration: "May 2018 - Nov 2020",
+    highlights: [
+      "successfully completed and passed all 3 subjects",,
+    ],
+  },
+  {
+    institute: "Nooraniya M.M.V.",
+    degree: "GCE Ordinary Level",
+    duration: "December 2017",
+    highlights: [
+      "Achieved 5A's and 4C including distinction in Mathematics and English.",
+    ],
+  },
+];
+
+
 export {
   words,
   abilities,
@@ -279,4 +310,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+ educationCards,
 };
